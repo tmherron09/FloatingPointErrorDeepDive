@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Env_Net_5_0", "FloatingPointErrorDeepDive\Env_Net_5_0.csproj", "{9EF740F4-3CF0-4FA7-AC9A-CEB7BB69EA07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Env_Net_5_0", "Env_Net_5_0\Env_Net_5_0.csproj", "{9EF740F4-3CF0-4FA7-AC9A-CEB7BB69EA07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unity- static example", "Unity- static example", "{CCB6147D-14E8-47D6-8825-B1BB619BCE58}"
 	ProjectSection(SolutionItems) = preProject
 		FPE_Unity.cs = FPE_Unity.cs
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Env_NetCore_3_1", "Env_NetCore_3_1\Env_NetCore_3_1.csproj", "{D45C1DFB-FDFA-4D1D-8D37-E8C9DADADD78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{9EF740F4-3CF0-4FA7-AC9A-CEB7BB69EA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF740F4-3CF0-4FA7-AC9A-CEB7BB69EA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF740F4-3CF0-4FA7-AC9A-CEB7BB69EA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45C1DFB-FDFA-4D1D-8D37-E8C9DADADD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45C1DFB-FDFA-4D1D-8D37-E8C9DADADD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45C1DFB-FDFA-4D1D-8D37-E8C9DADADD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45C1DFB-FDFA-4D1D-8D37-E8C9DADADD78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Env_Net_5_0
+namespace Env_NetCore_3_1
 {
+
     /// <summary>
     /// A static class Containing the various examples where I tested if it would have a Floating Point Rounding Error.
     /// </summary>
@@ -19,7 +18,7 @@ namespace Env_Net_5_0
 
         public static void Run()
         {
-            Console.WriteLine($"Current Environment: {Environment}");
+            Console.WriteLine($"Current Environment: {Environment}\n");
 
             Intro();
             VariableStoredValues();
@@ -31,7 +30,7 @@ namespace Env_Net_5_0
         }
         static void Intro()
         {
-            
+
             Console.WriteLine("Comparing runtime enviroments: floating point rounding error.");
             Console.WriteLine("**Reminder** Just a footnote for myself. While it is good to know floating point rules, this example is mostly being repo-ed so I remember to reverse engineer the compiled code to trace back how the different precisions or being written or computed. Another unnecessary but fun side project with learning assembly and reverse-engineering for later.");
             EndSection();
@@ -51,7 +50,12 @@ namespace Env_Net_5_0
         static void EndSection()
         {
             int width = Console.WindowWidth;
-            Console.WriteLine(new string('-', width) + "\n\n");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Write(new string('-', width));
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Write("\n\n");
         }
         static void VariableStoredValues()
         {
@@ -105,12 +109,17 @@ namespace Env_Net_5_0
             // Could cause other errors, come back to this in debug.
             if (result != 0 || result > 0 || result < 0)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"This environment was unable to correctly round: {result}");
+                Console.ForegroundColor = ConsoleColor.White;
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"This environment correctly rounded: {result}");
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
     }
+
 }
